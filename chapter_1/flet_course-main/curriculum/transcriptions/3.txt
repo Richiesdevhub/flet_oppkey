@@ -1,0 +1,580 @@
+title: 03 Python List Comprehension tutorial with Flet
+
+audio transcript:
+We are learning Python data structures
+0:03
+with flet. Currently we have our
+0:05
+character called Corey. And let's review
+0:08
+the code. Flet is a UI.
+0:15
+So we have a list for learning Python
+0:17
+data structures
+0:19
+an empty list and then each time to the
+0:22
+iteration of this for loop we append a
+0:26
+new version of Corey. So the Corey is
+0:29
+just an image here that is a flat image
+0:33
+and we're just adding it to the list.
+0:36
+This little thing here is a
+0:39
+deconstructor
+0:40
+where we change the elements of the list
+0:44
+into individual elements.
+0:49
+Okay. So since uh Corey is not in a row,
+0:54
+he's taking up a lot of space here. So
+0:57
+what we'll do is we will add Corey to
+1:01
+row and the row accepts a list. So we
+1:04
+can just do FT
+1:07
+row
+1:08
+and
+1:10
+so we're adding the row to the page and
+1:13
+then we've got Corey
+1:15
+and now we have Corey that's in a row.
+1:22
+Our objective is to practice data
+1:25
+structures. So I'm going to comment this
+1:27
+out doing command and the slash on the
+1:31
+map. I now have no queries because the
+1:35
+list is empty. And this is the list
+1:37
+right here.
+1:39
+We're going to use a different type of
+1:41
+list called a list comprehension. And
+1:44
+you may have heard of it and it may be
+1:46
+scary, but let's just start off with
+1:48
+what we want in the list. We want Corey
+1:50
+to be in the list. So we're doing create
+1:52
+Corey. And Corey will be created right
+1:55
+here.
+1:56
+And then we're going to use a kind of a
+1:58
+for loop
+2:00
+but it's right in the list itself. We're
+2:02
+not going to use the iterator or the
+2:04
+variable from the for loop. So in range
+2:10
+let's say
+2:12
+maybe I'll go big since we have more
+2:14
+space for query.
+2:17
+Cory comes back with
+2:20
+eight queries here because of this
+2:22
+range. This underscore here just means
+2:26
+that we're not going to use the
+2:27
+variable. We could have done the same
+2:29
+thing here for in the for loop. We use
+2:32
+four underscore in range five because
+2:34
+we're not using the variable I.
+2:39
+This is 100% the same functionality. It
+2:42
+just keeps it on one line. And although
+2:45
+the writing may be
+2:48
+a little bit confusing, you might also
+2:50
+see it in someone else's code or you
+2:53
+might want to have your code be shorter
+2:55
+and you get used to it. So, especially
+2:58
+with this type of nice syntax
+3:00
+highlighting, you can easily see the for
+3:03
+loop here and it's just a little bit
+3:05
+reversed, but once you get used to it,
+3:07
+there's no problem.
+3:11
+Okay, we're going to use another
+3:14
+um
+3:16
+variable definition. So we're going to
+3:20
+create a variable that I'm just going to
+3:22
+call spacing
+3:26
+and I'm going to use
+3:29
+which is not needed but this is just to
+3:31
+practice a type hints will be ft
+3:34
+container and then let's create a
+3:36
+container ft dot container
+3:42
+and we'll give it a width of
+3:45
+maybe let's say
+3:48
+100
+3:50
+and I'll make a container of the height
+3:52
+of let's say
+3:55
+maybe 200.
+3:59
+Okay. So I have a container here. The
+4:01
+container is empty. So it should be
+4:03
+invisible.
+4:05
+And the purpose of the tutorial is to
+4:07
+practice Python list manipulation. So
+4:10
+we're going to do practice queries.
+4:14
+the name of our list right there. We're
+4:17
+going to use the standard Python insert.
+4:21
+So the insert takes two parameters. The
+4:23
+first one is the element of the array or
+4:26
+the element of the list. Okay. And then
+4:30
+I'm going to insert the
+4:33
+spacing. So this doesn't overwrite the
+4:36
+zero. So we should still have eight
+4:38
+queries at this point. I'm going to
+4:40
+press space or save. And because I'm
+4:44
+using flat run and not Python main, it
+4:48
+has automatic hot reload. 1 2 3 4 5 6 7
+4:54
+8. So I have eight queries. I didn't
+4:56
+overwrite it. I just inserted it as the
+4:58
+first variable. So if you have a smaller
+5:01
+number of queries here, you can see. And
+5:05
+you're wondering, okay, how does this
+5:07
+container work? Well, maybe I'll just
+5:09
+color it briefly.
+5:12
+So, if I go background color on the
+5:16
+spacing and I'm going to call it blue,
+5:22
+see
+5:24
+right there. And if I save it, you'll
+5:27
+see that there's a container here which
+5:30
+is invisible and it's centered here and
+5:33
+it's blue. But I'm going to delete this
+5:35
+color blue
+5:39
+right there so that we have it as an
+5:42
+invisible invisible spacing.
+5:46
+We've already got the list comprehension
+5:50
+down, but maybe we'll practice it one
+5:52
+more time. I'm using this site called
+5:54
+Pixum.phos,
+5:56
+which you can use to get placeholder
+5:58
+photos. And there's a URL here for each
+6:01
+static image. So I'm going to copy the
+6:03
+static image into my clipboard and I'll
+6:06
+put
+6:09
+def function definition
+6:12
+create image
+6:14
+and this will also be the same thing.
+6:18
+It's good to repeat things so that we
+6:22
+start to understand. So I'm going to
+6:23
+return fd image
+6:26
+and in this case it's going to be the
+6:28
+URL
+6:30
+and I'm going to set the URL here to be
+6:36
+maybe I'll make it small too. So I'll go
+6:40
+80
+6:45
+by 80.
+6:48
+So now we have another function here
+6:50
+that will create and return a random
+6:53
+image from Laurel Laurel Pixum or Pixum.
+7:02
+And we will
+7:07
+add the photo
+7:20
+and it's right there.
+7:23
+Okay, let's go back to our create image
+7:26
+function. You've done a great job at
+7:29
+creating two different functions with
+7:32
+somewhat similar functionality, but this
+7:33
+one is coming from the network. So you
+7:35
+you gained that skill and we're going to
+7:39
+change it more so that you it can accept
+7:41
+a parameter. So we'll have it accept a
+7:44
+parameter seed and we'll have it be type
+7:47
+integer. Again this colon and int is
+7:50
+just the optional type definition. You
+7:52
+don't really need it. Okay, but we're
+7:56
+using it to clarity. I'm going to put an
+7:58
+f in front of the string. So now be
+8:00
+called an f string in Python. And now we
+8:03
+can have it take the variable
+8:08
+the parameter is passed in seed and
+8:11
+it'll be seed there. And now for the
+8:13
+create image we can pass it maybe like a
+8:16
+one as the random seed and we have a
+8:20
+different image here. Beautiful.
+8:23
+Okay. We're going to practice using the
+8:27
+list comprehension again.
+8:31
+Okay. So we're going to call it images.
+8:33
+Maybe you can figure it out even before
+8:34
+I do it, right? Okay. So what do we have
+8:38
+here? We have the thing that we want in
+8:40
+the list and that is the create.
+8:44
+So we want an image. So we're going to
+8:46
+do create image.
+8:48
+Beautiful.
+8:50
+Same convention, but there's a
+8:52
+difference here. for
+8:55
+I as how about for seed
+8:59
+in range
+9:01
+four.
+9:03
+Now we pass it in the seed
+9:09
+and
+9:11
+instead of the
+9:17
+create image here so we now have a list
+9:20
+of images right so it's creating it's a
+9:21
+list comprehension it's a list fd do row
+9:27
+row
+9:28
+and this will accept a list so we can
+9:32
+pass it the test of images.
+9:36
+Okay.
+9:38
+And there's some duplication here.
+9:43
+So I think I'll just going to multiply
+9:46
+the seed times let's say five
+9:51
+and then we have a wider rarity. And
+9:54
+actually the image like this is a bit
+9:57
+small. So I will
+10:01
+increase the size
+10:09
+maybe by 120.
+10:16
+A little easier to read. I can probably
+10:19
+fit another one on here. I'll go five.
+10:24
+And now we have
+10:27
+it's the wrong one. That's Corey. Okay,
+10:30
+here this is the images. We go five.
+10:37
+And now there's five images and five
+10:40
+queries.
+10:41
+Beautiful, huh?
+10:44
+But it looks like you can put a second
+10:46
+row here. So let's just copy this and
+10:49
+we'll
+10:50
+call it images
+10:53
+two.
+10:56
+We'll change the seed multiplier maybe
+10:59
+to something like
+11:01
+eight. So there'll be a different seed
+11:05
+and we will add another row. page add
+11:10
+ft dot row
+11:15
+and it'll be images two. Images two
+11:25
+and this one is coming up duplicate.
+11:31
+Okay, let's try to first range is zero.
+11:36
+So the seed is likely going to be
+11:42
+zero, right? So it's the same seed, but
+11:44
+maybe we can just make it be a bit
+11:47
+different. And we will add plus maybe
+11:50
+some random number like three. And we'll
+11:53
+see whether it's any better. And now we
+11:56
+have 10 different complete images. And
+11:59
+it looks good.
+12:01
+Very nice.
+12:04
+That shows you that the first element of
+12:06
+the list is a zero and so the seed was
+12:10
+the same. So kind of a good lesson.
+12:13
+Congratulations on blazing through the
+12:16
+basic Python course. You're now dealing
+12:19
+with manipulation of data structures. We
+12:23
+have a rather complex topic called the
+12:25
+list comprehension.
+12:27
+Although it sounds kind of confusing.
+12:30
+Comprehension.
+12:32
+What do you mean comprehend a list?
+12:34
+Okay,
+12:35
+there's two components. It's the thing
+12:37
+you want to drop into the list right
+12:38
+here. So in our model, we're dropping in
+12:43
+query, right? And then over here, you
+12:47
+have a for loop and it runs the for
+12:50
+loop. There's no this is no variable
+12:53
+like we're using this uh underscore as
+12:56
+the name of the variable. By convention
+12:58
+means you're not going to use it. And
+13:00
+it's range five. So it's going to create
+13:02
+five queries. And that's what we have
+13:05
+right there. Beautiful.
+13:08
+We also learned the insert.
+13:11
+Insert into a list. A list is one of the
+13:14
+basic data structures of Python. And
+13:16
+we're using queries.insert
+13:18
+at the index zero that you want. And
+13:22
+then we're adding the spacing which is a
+13:24
+custom object that we created to uh use
+13:29
+a invisible container as the spacing.
+13:32
+But the main concept is insert zero and
+13:35
+then the thing that you want to insert
+13:38
+into the list at that point.
+13:42
+It could be any index.
+13:45
+uh we're going to then
+13:49
+define a function with a parameter as
+13:52
+the input to the function. So these two
+13:54
+are different in that the second
+13:56
+function that we created does take a
+13:59
+parameter that is an integer and we're
+14:02
+using that integer seed right there.
+14:04
+That's the name of the parameter. We're
+14:07
+we're then sticking it right there.
+14:09
+We're able to do this because of the f
+14:12
+string
+14:15
+which does the string interpolation.
+14:18
+So it's going to replace the value here
+14:20
+in the string with the name of the
+14:24
+parameter right there.
+14:27
+And the last thing that is of course
+14:29
+this is aworked image super common to
+14:32
+use in your Python code and this is one
+14:36
+simple way to do it with flat. So you
+14:39
+can grab a network image and it's kind
+14:41
+of exciting because we've got um 10 of
+14:45
+them down here. You can make it bigger.
+14:47
+You could change the parameters. So
+14:49
+congratulations on getting this far.

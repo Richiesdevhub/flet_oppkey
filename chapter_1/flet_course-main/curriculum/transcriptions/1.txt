@@ -1,0 +1,484 @@
+title: Introduction to Python with Flet
+
+audio transcript:
+0:00
+We're going to introduce you to Python
+0:03
+and also Flat.
+0:05
+Flat is a UI for Python.
+0:10
+So, you can put icons,
+0:14
+you can put text
+0:16
+of different sizes.
+0:19
+To get started, we're going to use a
+0:21
+packaging tool called UV. You'll need to
+0:25
+install this. UV is like pip pip. You
+0:29
+might be familiar with installing
+0:30
+packages with pip. We're going to be
+0:33
+using uv instead of pip. So you need to
+0:36
+grab it with this curl command and
+0:38
+install uv.
+0:43
+I'm now going to start a new project
+0:44
+with uv. So uv
+0:49
+in it.
+0:51
+I'm going to use a specific version of
+0:52
+python.
+0:54
+Python= 3.13.
+0:58
+I'll call my project list
+1:02
+comp for list comprehension.
+1:06
+It create the project. There's a new f
+1:08
+folder in here. I'm going to change
+1:10
+directory into the new folder. And I
+1:13
+have three files here. I'm going to
+1:15
+start up an editor. I'm going to use
+1:16
+cursor.
+1:23
+In cursor, we're not going to use the AI
+1:25
+and we're not going to use the agents.
+1:27
+So, I'm going to do control
+1:30
+or command option B on the Mac
+1:34
+and that will collapse the sidebar for
+1:38
+cursor. Also, there's a cursor tab here.
+1:40
+I'm going to snooze it for 1 hour
+1:45
+on cursor. If you do control back tick,
+1:48
+you can get to the command line shell
+1:51
+here.
+1:53
+So I'm in the list comprehension
+1:59
+flat is going through a upgrade and it
+2:02
+should be at version 1.0
+2:07
+beta pretty soon but we're going to
+2:14
+use a different way. So I'm going to UV
+2:17
+add flat. I'm going to use these
+2:20
+brackets for all square bracket.
+2:26
+And this is all good to this point, but
+2:28
+we're going to do something a little
+2:29
+funky here. We're going to install the
+2:32
+alpha version.
+2:34
+And you might not need this step. You
+2:37
+might be able to just um
+2:40
+install it from the 1.0 by the time you
+2:43
+watch this video. So, you need to check
+2:45
+what version is available.
+2:50
+But right now, December of 2025, I have
+2:54
+to do it this way
+2:58
+and pre
+3:00
+release
+3:02
+equals allow.
+3:04
+And again, you can probably just do UV
+3:06
+add flat square brackets all and then
+3:10
+put the little semicolon there. But the
+3:13
+syntax did change.
+3:15
+I'll do it like this. so you can see it.
+3:19
+And I'm going to press enter.
+3:24
+All right. If you're on Windows,
+3:25
+hopefully you're using WSL
+3:27
+and so you'll be able to follow the same
+3:29
+commands. There's different ways to
+3:30
+activate the virtual environment. Um,
+3:34
+I'm just going to run it bin activate
+3:37
+like this.
+3:39
+So, I have the name of the folder that
+3:41
+I'm in here on the command line.
+3:45
+There's a little main.py pi here.
+3:48
+Do command B to collapse it. And I'm
+3:52
+going to reduce the pies a bit with
+3:54
+command minus sign so we have a little
+3:57
+bit more space.
+4:00
+And we could run it like this.
+4:08
+And it says the string here and the
+4:11
+main.
+4:14
+However, it's not very exciting
+4:17
+just on the command line. So, we want to
+4:19
+have some type of guey. So, I'm going to
+4:21
+import flat as ft
+4:25
+and the def main here. We're going to go
+4:29
+page as a variable. That's the input to
+4:32
+this method. And the type is going to be
+4:35
+ft.page.
+4:38
+So, this is a Python optional typing.
+4:41
+And just to be clear, it's going to
+4:43
+return null. So there's no return on
+4:46
+this.
+4:50
+So at this point, it will still work.
+4:55
+We can get rid of this.
+4:59
+And we do ft from right there.
+5:05
+Main, which is the method name here. We
+5:08
+can now
+5:12
+try to run it again.
+5:16
+So I'm going to do
+5:21
+flat run main.
+5:28
+So we now have this window. It says flat
+5:30
+at the top.
+5:36
+So we have the page that's getting
+5:39
+inputed
+5:40
+right there. So we'll start use that
+5:43
+same variable page dot add. I'm going to
+5:47
+add a piece of text. So ft. We just
+5:50
+imported from flat.
+5:55
+And then we're going to do
+5:57
+text for a piece of text.
+6:02
+And we'll put a string here. I'll say
+6:06
+hello,
+6:08
+I am Craig. And maybe put your own name
+6:12
+just to be fun. So we have it right
+6:15
+there.
+6:18
+Okay. And but at this point, we could
+6:22
+go to the end of the quote and put a
+6:24
+size
+6:26
+and we could make it a number like 50.
+6:33
+All right. So, just put size 50 and it's
+6:36
+now bigger. Or maybe even make it more
+6:38
+exciting and it's 80 and we have it
+6:43
+pretty big. And if we make it a color
+6:53
+red.
+6:56
+Okay.
+6:58
+So now it's nice and red.
+7:02
+Or we could make it
+7:05
+green.
+7:07
+Or we can make it
+7:10
+blue
+7:13
+or a yellow.
+7:19
+Okay, maybe I'll leave it at yellow.
+7:21
+Looks like a little bit like a B. Okay,
+7:23
+this is pretty fun. I'm going to create
+7:26
+a folder here, a new folder. I'm going
+7:29
+to call it assets.
+7:31
+I'm going to find a picture. So, I had
+7:34
+the AI create this little assets for me.
+7:39
+I just dropped it into asset and it's
+7:41
+like a pixart.
+7:44
+You can also go to it.io. There's many
+7:47
+sites like this and you can browse for
+7:51
+game assets
+7:53
+and then under the game assets filter
+7:56
+results to free and you can find many of
+8:00
+these asset packs here.
+8:03
+um just put it into a image editor like
+8:06
+to find the one that you like.
+8:13
+I think in the past I have used this
+8:16
+Sproutland
+8:18
+and there's a little rabbit like
+8:20
+character there,
+8:22
+but I'm using my little character here
+8:24
+that I'm calling Corey for a future
+8:27
+game.
+8:29
+Okay. So, I've set up the assets
+8:30
+directory and it's called assets. So,
+8:33
+I'm going to specify it here. I'm going
+8:35
+to go assets
+8:38
+directory. I'm going to put these
+8:41
+quotes. I want to call it assets. I'm
+8:44
+going to save it. Now,
+8:47
+now I can add
+8:50
+a graphic to the page. So, I'm going to
+8:52
+do FT, which is our flat,
+8:57
+and then I'm going to go image here.
+9:00
+I'll do a round bracket. I'll put double
+9:05
+quotes, and I'll put the name of the
+9:06
+file. Remember what it was? It's right
+9:09
+up here, right? So, it's
+9:11
+Corey_front.png.
+9:18
+And we're good to go.
+9:22
+Oh, I guess
+9:25
+I put my own name. I guess you could
+9:27
+make the could have put a you could have
+9:29
+put a picture of yourself, I guess. But
+9:32
+let's go Corey.
+9:35
+All right, let's review what we learned.
+9:37
+We used UV, the Python package manager
+9:42
+to install a bunch of packages. One of
+9:45
+the packages that we did install is
+9:48
+Flat.
+9:50
+So UV is the Python package manager and
+9:54
+U flat is this package that adds a UI
+9:57
+component to it. And the UI component is
+10:02
+is this that you can see where you can,
+10:05
+you know, you can move it around. Um
+10:10
+we can put buttons, graphics on it.
+10:13
+And then we learned how to import a
+10:16
+Python package. And the keyword here is
+10:19
+simply this import statement.
+10:23
+So this is how all Python packages are
+10:25
+installed and it's important
+10:30
+and as is a keyword and where you can
+10:33
+specify any word here but by convention
+10:36
+flat often uses FT. So it's a shortcut
+10:40
+right? So you could do flat here as
+10:42
+well, but we're just putting ft because
+10:45
+it's shorter than the word flat.
+10:52
+We define a function.
+10:54
+So the way you define a function in
+10:56
+Python is a keyword defaf. And there's a
+10:59
+special
+11:00
+function here called main. We can create
+11:03
+additional ones with the same
+11:04
+convention. And there's some round
+11:07
+brackets here. And there's a colon over
+11:09
+here.
+11:10
+And inside the round brackets, there's a
+11:14
+variable that is passed into it.
+11:20
+And when it's passed in to this function
+11:25
+here, it's generally called a parameter.
+11:28
+That's what people often call it.
+11:32
+And there's a colon here. And if you're
+11:34
+not familiar, this is a little funky,
+11:36
+but this just specifies the type. So it
+11:39
+will work without this ft.page
+11:44
+and this thing that looks like a pointer
+11:46
+this arrow here is simply say that it's
+11:49
+going to return null none. So this main
+11:52
+function does not return anything.
+11:55
+And this things with the colon is the
+11:58
+Python optional type hints that we'll be
+12:01
+using in this course quite a bit. uh
+12:05
+it's a little newer and you may not have
+12:08
+learned it in school because your school
+12:10
+might be using curriculum developed uh
+12:13
+maybe more than five years ago and this
+12:16
+is uh primarily the way that Python is
+12:19
+done nowadays. So congratulations on
+12:23
+making your first flat application.
+12:27
+You can play around with it. In the
+12:29
+future, we're going to be focused on
+12:32
+Python
+12:34
+uh data structures. So, for example, a
+12:37
+list and list comprehensions.
+
+All
+
+From Oppkey
+

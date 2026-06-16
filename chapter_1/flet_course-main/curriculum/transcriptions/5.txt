@@ -1,0 +1,199 @@
+title: 
+05 Python Loops, Lists, Functions - Beginner explanation
+
+audio transcript:
+Welcome to the Python beginner tutorial
+0:02
+where we're using Python and we're using
+0:05
+Flat. We are inspecting this 24line
+0:08
+program. The 24 line program produces an
+0:13
+row of a character that saved from the
+0:16
+local disk and also a set of 10 images
+0:20
+that's pulled over from the internet.
+0:23
+The focus is on data structures. The
+0:27
+first question was how to explain this
+0:30
+function visually.
+0:36
+Start here. The function is called
+0:39
+create image
+0:42
+and it's called create image right here.
+0:45
+This is the entry point.
+0:48
+You call it here in the body of your
+0:51
+program. The body of program is called
+0:55
+defaf main. This is a function that is
+0:58
+called it jumps from here to here.
+1:03
+Let's enter the function.
+1:05
+So you call it from your main program.
+1:09
+Create image. This is the name of it.
+1:12
+And there's an input which is the seed.
+1:14
+And the seed is integer.
+1:18
+So this is the input right here to the
+1:21
+function. It's called a parameter. The
+1:24
+type is integer,
+1:27
+right? So you call it, you have the
+1:30
+input and there's a set of operations
+1:32
+that take place. We're going to build a
+1:35
+URL string using a f string.
+1:41
+So within the body of the function here,
+1:45
+we are
+1:48
+creating this
+1:50
+URL to get the image. So it uses the
+1:54
+input to the function and it builds this
+1:58
+string here.
+2:04
+The next step is that after it builds
+2:07
+the string, it downloads the image from
+2:10
+the network. And we're using a service
+2:12
+called Pixum.phos. photos.
+2:19
+So it connects to it the URL, it gets
+2:22
+the image and it's going to store it in
+2:24
+memory. Then it passes this image into
+2:29
+this other function here which is the
+2:32
+flat image.
+2:36
+So it creates a flat image object.
+2:40
+And finally the function will return the
+2:44
+flat image. So at this point you have
+2:47
+the flat image. It returns it and it
+2:49
+passes it back down to the main program
+2:52
+where the main program then stores the
+2:56
+flat image here in the variable.
+3:00
+So the next question we had was in this
+3:02
+for loop and we're using a variable
+3:06
+called underscore.
+3:08
+This underscore doesn't really have that
+3:11
+special meaning. By convention, when you
+3:14
+name a variable underscore here, it just
+3:17
+means that the underscore is usually not
+3:20
+used
+3:22
+in the loop.
+3:24
+So, let's compare it to this one down
+3:28
+here. So, this for seed, seed is the
+3:31
+name of the variable as the same as
+3:33
+calling it underscore, but we're going
+3:35
+to use seed here. So for seed in range
+3:38
+five, it goes back to here and we use it
+3:41
+within this function.
+3:44
+If it's underscore, we don't we don't
+3:46
+pass it back.
+3:48
+You could use any variable name here,
+3:51
+but the underscore
+3:53
+by convention, you see it and you
+3:56
+realize you're not going to pass it
+3:57
+back. That's what the underscore is.
+4:01
+The last question we received was to
+4:04
+explain in more detail with this list
+4:07
+comprehension. There is a for loop on
+4:10
+the right hand side. On the left hand
+4:13
+side is a function.
+4:19
+The name of the function is create query
+4:23
+and that is run five times.
+4:27
+So we first run the list comprehension.
+4:30
+It's going to loop over the range from 0
+4:34
+to 4 five times. These numbers here
+4:38
+represent the iteration through the loop
+4:41
+number starts at zero and goes to four.
+4:44
+So everything that is less than five and
+4:48
+incremented by one each time.
+4:51
+First time through the loop, it calls
+4:53
+the create query and it returns an
+4:57
+image. It appends the result to a list.
+5:01
+It repeats this for an additional four
+5:04
+times. And each time it appends it,
+5:07
+which means it puts it to the end of the
+5:09
+list. At the end of the looping, the
+5:13
+queries, which is the name of the list,
+5:17
+now contains five image objects.

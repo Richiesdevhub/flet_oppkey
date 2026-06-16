@@ -1,0 +1,340 @@
+title: 04 Python Virtual Environment Introduction
+
+audio transcript:
+We're going to explain the virtual
+0:01
+environment on the Macintosh for Python.
+0:04
+This applies to Linux and Windows as
+0:07
+well too.
+0:09
+But on the Mac, I think on Linux 2 or
+0:11
+WSL, you're going to have a system
+0:13
+Python installed at usually user bin
+0:16
+Python. In this case, it's Python 3
+0:19
+that's installed.
+0:21
+So in your the default path, unless you
+0:25
+modify it, you'll have a version of
+0:27
+Python, which is
+0:30
+on this version of the Mac, it's 3.9.6.
+0:35
+So, if I run the system Python, unless
+0:39
+the Python packages that were installed
+0:42
+with it, I'll get a a I'll get a shorter
+0:44
+list. But I'm not using the system
+0:47
+Python because it's older and you don't
+0:50
+want to clutter up your system. By
+0:53
+default, I'm using this Python
+0:57
+which is in a different location because
+1:00
+I'm using a system called PM.
+1:03
+And the version I'm using by default is
+1:06
+3.13 which is different than the version
+1:09
+that's installed with the Mac. They're
+1:11
+both installed on my system.
+1:21
+And there's much more installed in my
+1:23
+system Python. Not using the one that
+1:26
+ships with Mac OS, but I've set up my
+1:28
+own. Normally the version of Python on
+1:31
+my system that I'm doing 3.13, but for
+1:35
+this
+1:37
+different uh project I'm using Python
+1:40
+3.12. UV run Python version is 3.12.
+1:47
+So if I
+1:52
+Look for the location of Python.
+1:55
+It's in
+1:58
+the local directory. So this is the name
+2:00
+of the folder here. This is the VNVM
+2:05
+and the Python is located within the
+2:08
+virtual environment.
+2:12
+So if you want to use it by default
+2:14
+within your main project here there's a
+2:17
+subfolder which it doesn't come up and
+2:20
+you do ls- a and then you'll see the
+2:23
+folders that start with a dot and then
+2:26
+source will run an a program
+2:31
+bin and then there's something called
+2:33
+activate. So I'm going to source it.
+2:35
+It's going to run this script called
+2:37
+activate.
+2:39
+And then now I have this. It's in the
+2:43
+virtual environment Python
+2:48
+which is 3.12
+2:51
+and I was using the one in here.
+2:56
+To deactivate it, you go deactivate
+3:00
+and let's say I'm running cursor
+3:14
+So because there's multiple versions of
+3:15
+Python in the bottom bar here,
+3:19
+you can select the version
+3:23
+one of the different versions of Python
+3:25
+installed. There's many versions of
+3:26
+Python installed on my system.
+3:29
+The one to use is going to do dot slash
+3:33
+and then there's another dot and then
+3:35
+there's a vvmm
+3:38
+in Python. So it should correspond to
+3:41
+the
+3:42
+the same place that I have my project
+3:48
+root project in.
+3:56
+So if you don't match it up,
+3:59
+you may get various problems with your
+4:02
+editor.
+4:04
+So let's say that I'm I'm randomly going
+4:06
+to choose this one here. And there's a
+4:09
+whole bunch of syntax errors because I'm
+4:10
+using the wrong Python.
+4:14
+I'm I have to use the one that's within
+4:15
+the virtual environment. And then the
+4:18
+the llinter warnings go away.
+4:21
+In the left hand bar there is a pi
+4:23
+projectl
+4:25
+and it shows some of the dependencies
+4:28
+that were installed.
+4:30
+In our tutorial we've just installed
+4:32
+this one package but this one package
+4:34
+installs a whole bunch of other
+4:35
+packages.
+4:37
+This is just for convenience right where
+4:40
+it you just installed this one package
+4:42
+but if you look at your UV lock file
+4:45
+there's a whole bunch of other packages
+4:48
+that were automatically installed.
+4:54
+And it's a rather long list,
+5:00
+right? I'm only on C here. It's
+5:02
+alphabetical.
+5:04
+And in fact, with our current project,
+5:07
+if I do UV tree,
+5:10
+there's a whole bunch of packages
+5:13
+that were installed automatically.
+5:22
+If you've been following along with this
+5:24
+tutorial, you've created the virtual
+5:26
+environment automatically with UV in it.
+5:30
+And you may not know what the virtual
+5:32
+environment is. The virtual environment
+5:35
+creates a sandboxed version. So it's an
+5:37
+isolated version of Python that is
+5:40
+separate from your system Python and the
+5:42
+Python used in your other projects.
+5:45
+this Python can be a different version
+5:47
+which could be important for
+5:48
+compatibility with the other packages.
+5:51
+That's why in this tutorial and in most
+5:53
+of your classes, you're going to use a
+5:56
+virtual environment of Python so that
+5:58
+the the the system is replicable.
+6:05
+If you're finding a tutorial or homework
+6:07
+assignments, the the version of Python
+6:10
+that you're using may not work with one
+6:12
+of the packages. So you have to sync it
+6:13
+up with whatever the teacher or the
+6:16
+instructor is showing you. Also, if
+6:19
+you've installed a package in one
+6:21
+version of Python, it's not going to be
+6:23
+accessible to other versions of Python
+6:26
+on your system.
+6:29
+So even if you installed it, you're
+6:31
+right on the command line with pip and
+6:33
+you you've installed some big package,
+6:35
+it's not going to be accessible from
+6:38
+within the project that you're working
+6:39
+on, which is as it should be. And you
+6:41
+should in general only install the main
+6:44
+packages for your project within your
+6:46
+specific project.
+6:49
+This last point here is how do you act
+6:51
+activate the Python or how do you use
+6:53
+it? You can use uv run python or uv run
+6:58
+another command or if you want to have
+7:02
+it be active all the time use this
+7:04
+keyword source which is from the shell
+7:07
+and then there's a subdirectory
+7:09
+venv/bin/activate
+7:13
+and from that point on within your one
+7:16
+directory you'll be able to use that
+7:17
+specific version of python.
+7:22
+If it's confusing, you just need to
+7:24
+practice it. And there shouldn't be any
+7:26
+problems with this tutorial. And I think
+7:28
+a lot of people, they kind of struggle
+7:30
+with this concept for years because
+7:32
+sometimes it works. Sometimes your
+7:34
+application is working. You don't know
+7:36
+where the specific version of Python is,
+7:39
+but you're having problems. You can drop
+7:41
+a comment or question in it. And if you
+7:45
+just keep practicing, you can really
+7:47
+control your virtual environments and
+7:49
+know where the packages are installed.
+7:51
+know like why it's working funky, know
+7:53
+when you are using a certain version of
+7:56
+Python and avoid and debug your problems
+7:59
+that way. But for now, it should be fun
+8:02
+since we installed a virtual
+8:04
+environment. We installed a specific
+8:06
+version of Python in your virtual
+8:08
+environment and you should be happy
+8:10
+following this tutorial. Hope you're
+8:12
+having a great day.
