@@ -7,6 +7,9 @@ def main(page: ft.Page):
     def create_cory():
         return ft.Image("cory_front.png", width=58, height=79)
 
+    def create_image(seed)->ft.Image:
+        return ft.Image(src=f'https://picsum.photos/seed/{seed}/80/80')
+
     def icon_test():
         return ft.IconButton(
             icon=ft.Icons.ACCESS_ALARM,
@@ -15,22 +18,28 @@ def main(page: ft.Page):
             icon_color="white"
         )
 
-    corys = [icon_test() for _ in range(5)]
+    corys = [create_cory() for _ in range(5)]
+    spacing:ft.Container =ft.Container(width=100, height=200)
+    corys.insert(0, spacing)
+
+    images = [create_image(seed*5) for seed in range(5)]
+    images2 = [create_image((seed+6)*8) for seed in range(5)]
 
     cory = ft.Container(
         content=ft.Image(src="cory_front.png", width=58, height=79),
         left=0,
-        top=50
-    )
+        top=50)
 
     game_area = ft.Stack(
-        controls=[cory],
+        controls=[*corys],
         width=ft.Window.width,
         height=300
     )
 
     # page.add(ft.Row(corys))
-    page.add(game_area)
+    page.add(ft.Row(corys))
+    page.add(ft.Row(images))
+    page.add(ft.Row(images2))
 
 
 if __name__ == "__main__":
