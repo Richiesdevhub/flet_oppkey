@@ -17,7 +17,7 @@ def main(page: ft.Page):
 
     cory = ft.Container(
         content=ft.Image(src="cory_front.png", width=58, height=79),
-        left=0,cd ../..
+        left=0,
         top=50
     )
 
