@@ -8,23 +8,30 @@ def main(page: ft.Page):
     # Starting speed
     speed = 5
     speed_label = ft.Text(f"Speed: {speed}", color="white")
+
+    movement_status = ft.Text("Stay in bounds", color="white")
+
     background = ft.Container(
         content=ft.Image(src="background.gif",
-                         width=ft.Window.width,
-                         height=ft.Window.height),
+                         width=page.width,
+                         height=500),
         width=ft.Window.width,
         height=ft.Window.height)
 
+    cory_width=40
+    cory_height=60
+
     cory = ft.Container(
-        content=ft.Image(src="cory_front.png", width=58, height=79),
-        left=0,
-        top=50
+        content=ft.Image(src="cory_front.png",
+                        width=cory_width, height=cory_height),
+                        left=20,
+                        top=100
     )
 
     game_area = ft.Stack(
         controls=[background, cory],
-        width=ft.Window.width,
-        height=300
+        expand=True,
+        height=400
     )
 
     state={"speed":speed, }
@@ -38,20 +45,33 @@ def main(page: ft.Page):
                              label="{value}", on_change=on_speed_change)
 
     def move_left():
-        print("Moving left")
-        cory.left -= state["speed"]
+        if cory.left - state["speed"] >= 0:
+            cory.left -= state["speed"]
+            movement_status.value="moving left"
+        else:
+            movement_status.value="hit left boundry"
 
     def move_right():
-        print("Moving right")
-        cory.left += state["speed"]
+        if cory.left + state["speed"] <= page.width-cory_width:
+            cory.left += state["speed"]
+            movement_status.value = "moving right"
+        else:
+            movement_status.value = "hit right boundry"
 
     def move_up():
-        print("Moving up")
-        cory.top -= state["speed"]
+        if cory.top - state["speed"] >= 0:
+            cory.top -= state["speed"]
+            movement_status.value = "moving up"
+        else:
+            movement_status.value = "hit upper boundry"
+
 
     def move_down():
-        print("Moving down")
-        cory.top += state["speed"]
+        if cory.top + state["speed"] <= 300-cory_height:
+            cory.top += state["speed"]
+            movement_status.value = "moving down"
+        else:
+            movement_status.value = "hit bottom boundry"
 
     left_button = ft.IconButton(
         icon=ft.Icons.ARROW_LEFT,
@@ -91,7 +111,7 @@ def main(page: ft.Page):
     )
 
     page.add(game_controller,
-             ft.Row([speed_label, speed_slider]),
+             ft.Row([speed_label, speed_slider, movement_status]),
              game_area)
 
 
